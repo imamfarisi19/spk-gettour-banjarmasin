@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('kelurahans', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->integer('kecamatanId');
+            $table->double('latitude');
+            $table->double('longitude');
             $table->timestamps();
         });
     }

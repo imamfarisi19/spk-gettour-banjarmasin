@@ -13,8 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kriteria_tambahans', function (Blueprint $table) {
+        Schema::create('kriteria_tambahan_untuk_saws', function (Blueprint $table) {
             $table->id();
+            $table->integer('kategoriWisataId');
+            $table->string('penjelasan')->nullable();
+            $table->boolean('isBenefit')->nullable();
+            $table->double('bobot')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kriteria_tambahans');
+        Schema::dropIfExists('kriteria_tambahan_untuk_saws');
     }
 };

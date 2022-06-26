@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class KriteriaTambahanSeeder extends Seeder
+class KriteriaUmumAreaParkirSeeder extends Seeder
 {
     /**
      * Run the database seeds.

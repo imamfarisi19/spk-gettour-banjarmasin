@@ -20,5 +20,14 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        $this->call(KriteriaTambahanUntukSawSeeder::class);
+        $this->call(KriteriaUmumAreaParkirSeeder::class);
+        $this->call(KriteriaUmumJarakSeeder::class);
+        $this->call(TempatWisataSeeder::class);
+        $this->call(KelurahanSeeder::class);
+        $this->call(KecamatanSeeder::class);
+        $this->call(KategoriWisataSeeder::class);
+        $this->call(AdminSeeder::class);
     }
 }

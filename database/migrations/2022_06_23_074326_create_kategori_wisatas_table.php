@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('kategori_wisatas', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->boolean('linkDirect');
+            $table->boolean('isAktif');
             $table->timestamps();
         });
     }

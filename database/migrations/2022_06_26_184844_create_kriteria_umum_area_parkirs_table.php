@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('admins', function (Blueprint $table) {
+        Schema::create('kriteria_umum_area_parkirs', function (Blueprint $table) {
             $table->id();
-            $table->string('level');
-            $table->string('username');
-            $table->string('password');
+            $table->integer('tempatWisataId');
+            $table->double('bobot');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admins');
+        Schema::dropIfExists('kriteria_umum_area_parkirs');
     }
 };

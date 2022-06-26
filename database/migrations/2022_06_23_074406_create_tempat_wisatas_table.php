@@ -15,6 +15,13 @@ return new class extends Migration
     {
         Schema::create('tempat_wisatas', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->boolean('isAktif');
+            $table->string('linkInternet');
+            $table->integer('kategoriWisataId');
+            $table->integer('kelurahanId');
+            $table->double('latitude');
+            $table->double('longitude');
             $table->timestamps();
         });
     }
