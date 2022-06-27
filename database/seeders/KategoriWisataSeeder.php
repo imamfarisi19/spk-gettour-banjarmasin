@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class KategoriWisataSeeder extends Seeder
 {
@@ -80,7 +81,7 @@ class KategoriWisataSeeder extends Seeder
         DB::table('kategori_wisatas')->insert([
             //8
             'nama' => 'Gereja',
-            'linkDirect' => false,
+            'linkDirect' => true,
             'isAktif' => true,
             'created_at' => now(),
             'updated_at' => now(),
